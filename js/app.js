@@ -12,7 +12,9 @@ new Vue({
 		y: 0,
 		job: 'Web Developer',
 		website: 'https://github.com/rio-karim',
-		websiteTag: '<a href="https://github.com/rio-karim"> Rio Karims GitHub'
+		websiteTag: '<a href="https://github.com/rio-karim"> Rio Karims GitHub',
+		available: false,
+		nearby: false
 	},
 
 	methods: {
@@ -54,15 +56,22 @@ new Vue({
 
 	computed: {
 
-		addToA: function(){
-			console.log('addToA');
-			return this.a + this.age;
-		},
+			compClasses: function(){
+				return{
+					available: this.available,
+					nearby: this.nearby
+				}
+			},
 
-		addToB: function(){
-			console.log('addToB');
-			return this.b + this.age;
-		},
+			addToA: function(){
+				console.log('addToA');
+				return this.a + this.age;
+			},
+
+			addToB: function(){
+				console.log('addToB');
+				return this.b + this.age;
+			},
 
 	}
 
