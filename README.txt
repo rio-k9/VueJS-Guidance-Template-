@@ -1,1 +1,1 @@
-VueJS project to create a template blog for future clients. Easy integration with CushyCMS
+VueJS project to create and practise VueJS features
