@@ -3,7 +3,9 @@ new Vue({
 	el: '#vue-app',
 	data: {
 		name: 'Rio',
-		job: 'Web Developer'
+		job: 'Web Developer',
+		website: 'https://github.com/rio-karim',
+		websiteTag: '<a href="https://github.com/rio-karim"> Rio Karims GitHub'
 	},
 	methods: {
 		greet: function(time){
