@@ -3,14 +3,10 @@ new Vue({
 	el: '#vue-app',
 	data: {
 		name: 'Rio',
+		age: 25,
 		job: 'Web Developer',
 		website: 'https://github.com/rio-karim',
 		websiteTag: '<a href="https://github.com/rio-karim"> Rio Karims GitHub'
-	},
-
-	el: '#vue-events',
-	data: {
-		age: 25
 	},
 
 	methods: {
