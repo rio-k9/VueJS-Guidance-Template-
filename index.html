@@ -23,6 +23,13 @@
 			<p v-html="websiteTag"></p>
 		</div>
 
+		<div id="vue-events">
+			<h1> Events </h1>
+			<button v-on:click="add">Add a Year</button>
+			<button v-on:click="subtract">Subtract a Year</button>
+			<p>My age is {{age}}</p>
+		</div>
+
 		<script src="js/app.js"></script>
 	</body>
 </html>
