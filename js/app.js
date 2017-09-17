@@ -3,6 +3,8 @@ new Vue({
 	el: '#vue-app',
 	data: {
 		name: 'Rio',
+		nameL: "",
+		ageL: "",
 		age: 25,
 		x: 0,
 		y: 0,
@@ -12,6 +14,12 @@ new Vue({
 	},
 
 	methods: {
+		logName: function(){
+
+		},
+		logAge: function(){
+			console.log('you entered your age');
+		},
 		greet: function(time){
 			return "Good " + time + " " + this.name;
 		},
