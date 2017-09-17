@@ -14,7 +14,9 @@ new Vue({
 		website: 'https://github.com/rio-karim',
 		websiteTag: '<a href="https://github.com/rio-karim"> Rio Karims GitHub',
 		available: false,
-		nearby: false
+		nearby: false,
+		error: false,
+		success: false
 	},
 
 	methods: {

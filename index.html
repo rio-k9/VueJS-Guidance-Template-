@@ -15,16 +15,27 @@
 	<body>
 
 		<div id="vue-app">
+			<h1> V-Conditionals </h1>
+			<button @click="error = !error"> Toggle Error </button>
+			<button @click="success = !success"> Toggle Success </button>
+
+			<p v-if="error">There has been an error</p>
+			<p v-else-if="success">Success!</p>
+	<!--
+			<p v-show="error">There has been an error</p>
+			<p v-show="success">Success!</p>
+		-->
+
 			<h1> Dynamic CSS</h1>
 			<h2>Example 1</h2>
 			<div @click="available = !available" v-bind:class="{available: available}">
-				<span>Phil</span>
+				<span id="dCSS">Phil</span>
 			</div>
 			<h2>Example 2</h2>
 			<button @click="nearby = !nearby">Toggle nearby</button>
 			<button @click="available = !available">Toggle available</button>
 			<div v-bind:class="compClasses">
-				<span>Paul</span>
+				<span id="dCSS">Paul</span>
 			</div>
 
 			<h1> Computed Properties </h1>
