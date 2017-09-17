@@ -15,6 +15,17 @@
 	<body>
 
 		<div id="vue-app">
+
+<h1> Computed Properties </h1>
+<button v-on:click="a++">Add to A</button>
+<button v-on:click="b++">Add to B</button>
+<p>A - {{ a }}</p>
+<p>B - {{ b }}</p>
+<p>Age + A = {{ addToA }}</p>
+<p>Age + B = {{ addToB }}</p>
+
+
+
 			<h1>{{ name }}</h1>
 			<h2>{{ job }}</h2>
 
@@ -43,7 +54,7 @@
 					<input type="text" v-model="ageL"/>
 				<!--
 			<input type="text" v-on:keyup.enter="logAge"/>
-			
+
 		-->
 		</div>
 

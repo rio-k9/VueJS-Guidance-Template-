@@ -6,6 +6,8 @@ new Vue({
 		nameL: "",
 		ageL: "",
 		age: 25,
+		a: 0,
+		b: 0,
 		x: 0,
 		y: 0,
 		job: 'Web Developer',
@@ -14,6 +16,17 @@ new Vue({
 	},
 
 	methods: {
+		/*
+		addToA: function(){
+			console.log('addToA');
+			return this.a + this.age;
+		},
+
+		addToB: function(){
+						console.log('addToB');
+			return this.b + this.age;
+		},
+*/
 		logName: function(){
 
 		},
@@ -38,5 +51,19 @@ new Vue({
 			this.y=event.offsetY;
 		}
 	},
+
+	computed: {
+
+		addToA: function(){
+			console.log('addToA');
+			return this.a + this.age;
+		},
+
+		addToB: function(){
+			console.log('addToB');
+			return this.b + this.age;
+		},
+
+	}
 
 });
