@@ -16,7 +16,13 @@ new Vue({
 		available: false,
 		nearby: false,
 		error: false,
-		success: false
+		success: false,
+		characters: ['Tony Stark', 'Steven Rogers', 'Thor Odinson', 'Peter Parker'],
+		enemies: [
+			{ name: 'Ultron', age: 1, planet: "Earth" },
+			{ name: 'Loki', age: 3000, planet: "Asgard" },
+			{ name: 'Thanos', age: 9999, planet: "Titan" }
+		]
 	},
 
 	methods: {

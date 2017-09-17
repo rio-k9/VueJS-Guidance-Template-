@@ -15,6 +15,28 @@
 	<body>
 
 		<div id="vue-app">
+			<h1> V-Loops </h1>
+			<ul>
+				<li v-for="(character, index) in characters">{{ index+1 }}) {{ character }}</li>
+			</ul>
+			<ul>
+				<li v-for="(enemy, index) in enemies">{{ index+1 }}) {{ enemy.name }} - Age: {{ enemy.age }}</li>
+			</ul>
+
+			<template v-for="(enemy, index) in enemies">
+				<h3>{{ index+1 }} . {{ enemy.name }}</h3>
+				<p>Age: {{ enemy.age }}</p>
+				<p>Planet: {{ enemy.planet }}</p>
+			</template>
+
+			<h3> Key:Value V-For </h3>
+			<template v-for="enemy in enemies">
+				<div v-for="(val,key) in enemy">
+					<p> {{key}} - {{val}}</p>
+				</div>
+			</template>
+
+
 			<h1> V-Conditionals </h1>
 			<button @click="error = !error"> Toggle Error </button>
 			<button @click="success = !success"> Toggle Success </button>
